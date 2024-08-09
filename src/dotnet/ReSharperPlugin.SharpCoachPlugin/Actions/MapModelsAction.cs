@@ -23,8 +23,8 @@ namespace ReSharperPlugin.SharpCoachPlugin.Actions;
 [ContextAction(
     Group = CSharpContextActions.GroupID,
     ResourceType = typeof(Resources),
-    NameResourceName = nameof(Resources.SampleContextActionName),
-    DescriptionResourceName = nameof(Resources.SampleContextActionDescription),
+    NameResourceName = nameof(Resources.ActionName),
+    DescriptionResourceName = nameof(Resources.ActionDescription),
     Priority = -10)]
 public class MapModelsAction : ContextActionBase
 {
@@ -38,7 +38,7 @@ public class MapModelsAction : ContextActionBase
             }};
         }}";
 
-    public override string Text => Resources.SampleContextActionText;
+    public override string Text => Resources.ActionText;
 
     private readonly CaretProvider _caretProvider; 
     private readonly IFunctionInfoProvider _functionDeclaration;

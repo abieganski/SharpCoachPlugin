@@ -18,13 +18,13 @@
     <resheader name="writer">
         <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
     </resheader>
-    <data name="SampleContextActionName" xml:space="preserve">
+    <data name="ActionName" xml:space="preserve">
         <value>MapModelsAction</value>
     </data>
-    <data name="SampleContextActionDescription" xml:space="preserve">
+    <data name="ActionDescription" xml:space="preserve">
         <value>Map internals of models</value>
     </data>
-    <data name="SampleContextActionText" xml:space="preserve">
+    <data name="ActionText" xml:space="preserve">
         <value>Map internals of models</value>
     </data>
 </root>

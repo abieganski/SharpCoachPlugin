@@ -60,8 +60,8 @@ namespace ReSharperPlugin.SharpCoachPlugin
         return string.Format(formatter, format, args);
     }
 
-    public static string SampleContextActionName => ResourceManager.GetString("SampleContextActionName");
-    public static string SampleContextActionDescription => ResourceManager.GetString("SampleContextActionDescription");
-    public static string SampleContextActionText => ResourceManager.GetString("SampleContextActionText");
+    public static string ActionName => ResourceManager.GetString("ActionName");
+    public static string ActionDescription => ResourceManager.GetString("ActionDescription");
+    public static string ActionText => ResourceManager.GetString("ActionText");
   }
 }
