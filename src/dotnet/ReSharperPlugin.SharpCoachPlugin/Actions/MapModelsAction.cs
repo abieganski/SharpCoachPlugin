@@ -18,7 +18,7 @@ using ReSharperPlugin.SharpCoachPlugin.Core.Providers.FunctionInfoProviders;
 using ReSharperPlugin.SharpCoachPlugin.Core.Providers.FunctionInfoProviders.Abstractions;
 using ReSharperPlugin.SharpCoachPlugin.Ui.ToolWindows;
 
-namespace ReSharperPlugin.SharpCoachPlugin;
+namespace ReSharperPlugin.SharpCoachPlugin.Actions;
 
 [ContextAction(
     Group = CSharpContextActions.GroupID,

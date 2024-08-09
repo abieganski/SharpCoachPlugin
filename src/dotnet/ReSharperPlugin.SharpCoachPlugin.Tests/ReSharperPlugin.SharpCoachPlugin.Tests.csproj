@@ -6,16 +6,33 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <PackageReference Include="GitHubActionsTestLogger" Version="2.0.1" />
-    <PackageReference Include="JetBrains.Lifetimes" Version="2024.1.0" />
     <PackageReference Include="JetBrains.ReSharper.SDK.Tests" Version="$(SdkVersion)" />
-    <PackageReference Include="Microsoft.NET.Test.Sdk" Version="17.4.1" />
-    <PackageReference Include="NUnit3TestAdapter" Version="4.3.1" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\ReSharperPlugin.SharpCoachPlugin\ReSharperPlugin.SharpCoachPlugin.csproj" />
   </ItemGroup>
 
   <ItemGroup>
     <Compile Remove="test/**/*" />
+    <Compile Include="test\src\Actions\ExtensionMethodTests.cs" />
+    <Compile Include="test\src\Actions\FullModelNameTests.cs" />
+    <Compile Include="test\src\Actions\MapClassInternalsTests.cs" />
+    <Compile Include="test\src\Actions\MapCollectionInternalsTests.cs" />
+    <Compile Include="test\src\Actions\MapEnumInternalsTests.cs" />
+    <Compile Include="test\src\Actions\LocalFunctionTest.cs" />
+    <Compile Include="test\src\Actions\MapNumericInternalsTests.cs" />
+    <Compile Include="test\src\Actions\MapStringInternalsTests.cs" />
+    <Compile Include="test\src\Actions\NonMethodHeaderCaret.cs" />
     <None Include="test/**/*" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Folder Include="test\data\Intentions\ContextActions" />
+    <Folder Include="test\data\Intentions\ContextActions\Actions\Class" />
+    <Folder Include="test\data\Intentions\ContextActions\Actions\Collection" />
+    <Folder Include="test\data\Intentions\ContextActions\Actions\Enum" />
+    <Folder Include="test\data\Intentions\ContextActions\Actions\String" />
   </ItemGroup>
 
 </Project>
