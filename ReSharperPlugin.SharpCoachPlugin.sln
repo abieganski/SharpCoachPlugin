@@ -1,11 +1,5 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ReSharperPlugin.SharpCoachPlugin", "src\dotnet\ReSharperPlugin.SharpCoachPlugin\ReSharperPlugin.SharpCoachPlugin.csproj", "{05608FE6-4FD1-4E9D-9BE2-B13A0E370BA2}"
-EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ReSharperPlugin.SharpCoachPlugin.Rider", "src\dotnet\ReSharperPlugin.SharpCoachPlugin\ReSharperPlugin.SharpCoachPlugin.Rider.csproj", "{084172D1-A9C6-46D0-96AD-05C5B09A5E5D}"
-EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ReSharperPlugin.SharpCoachPlugin.Tests", "src\dotnet\ReSharperPlugin.SharpCoachPlugin.Tests\ReSharperPlugin.SharpCoachPlugin.Tests.csproj", "{01C3DEF5-50B2-47CB-9467-19BC6DDF9D3D}"
-EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "misc", "misc", "{4A9ABB95-3762-448B-B5BF-099E46DB22DE}"
 ProjectSection(SolutionItems) = preProject
 	src\dotnet\Plugin.props = src\dotnet\Plugin.props
@@ -15,15 +9,19 @@ ProjectSection(SolutionItems) = preProject
 	gradle.properties = gradle.properties
 EndProjectSection
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ReSharperPlugin.SharpCoachPlugin.Core", "src\dotnet\ReSharperPlugin.SharpCoachPlugin.Core\ReSharperPlugin.SharpCoachPlugin.Core.csproj", "{59C23BBF-EEEB-4351-ACEA-A9ED6DAF054A}"
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "plugins", "plugins", "{4C87EF00-2B0D-4C83-B2B7-3130AA5F4C65}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ReSharperPlugin.SharpCoachPlugin.Ui", "src\dotnet\ReSharperPlugin.SharpCoachPlugin.Ui\ReSharperPlugin.SharpCoachPlugin.Ui.csproj", "{C72EF497-E2D7-4038-BE87-B1D899E4E1E2}"
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "src", "src", "{2DFF9535-A42C-4081-B01F-292690CB5AA6}"
 EndProject
-Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "plugins", "plugins", "{722801D2-73F6-48B7-B1FF-9B47AF45FE93}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ReSharperPlugin.SharpCoachPlugin.Core", "src\dotnet\ReSharperPlugin.SharpCoachPlugin.Core\ReSharperPlugin.SharpCoachPlugin.Core.csproj", "{F0B4264C-203B-4904-A721-61694EF37325}"
 EndProject
-Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "src", "src", "{0A269FC3-9120-49F7-BC5D-0DDEA4394D1D}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ReSharperPlugin.SharpCoachPlugin.Ui", "src\dotnet\ReSharperPlugin.SharpCoachPlugin.Ui\ReSharperPlugin.SharpCoachPlugin.Ui.csproj", "{87A76B1B-CE26-40E3-A6F7-B60534B6A1C4}"
 EndProject
-Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "tests", "tests", "{2D1EDE70-C329-47EF-A335-9B32CDFCB07C}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ReSharperPlugin.SharpCoachPlugin", "src\dotnet\ReSharperPlugin.SharpCoachPlugin\ReSharperPlugin.SharpCoachPlugin.csproj", "{9EA133DF-B348-43BC-AE08-9D664150F9A8}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ReSharperPlugin.SharpCoachPlugin.Rider", "src\dotnet\ReSharperPlugin.SharpCoachPlugin\ReSharperPlugin.SharpCoachPlugin.Rider.csproj", "{91BC3166-6930-495C-8736-C7BD6AAC8E90}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ReSharperPlugin.SharpCoachPlugin.Tests", "src\dotnet\ReSharperPlugin.SharpCoachPlugin.Tests\ReSharperPlugin.SharpCoachPlugin.Tests.csproj", "{7E5FAB51-28DC-4DE3-8D4E-C95E3EC4D452}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -31,32 +29,31 @@ Global
 		Release|Any CPU = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
-		{05608FE6-4FD1-4E9D-9BE2-B13A0E370BA2}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{05608FE6-4FD1-4E9D-9BE2-B13A0E370BA2}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{05608FE6-4FD1-4E9D-9BE2-B13A0E370BA2}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{05608FE6-4FD1-4E9D-9BE2-B13A0E370BA2}.Release|Any CPU.Build.0 = Release|Any CPU
-		{084172D1-A9C6-46D0-96AD-05C5B09A5E5D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{084172D1-A9C6-46D0-96AD-05C5B09A5E5D}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{084172D1-A9C6-46D0-96AD-05C5B09A5E5D}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{084172D1-A9C6-46D0-96AD-05C5B09A5E5D}.Release|Any CPU.Build.0 = Release|Any CPU
-		{01C3DEF5-50B2-47CB-9467-19BC6DDF9D3D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{01C3DEF5-50B2-47CB-9467-19BC6DDF9D3D}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{01C3DEF5-50B2-47CB-9467-19BC6DDF9D3D}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{01C3DEF5-50B2-47CB-9467-19BC6DDF9D3D}.Release|Any CPU.Build.0 = Release|Any CPU
-		{59C23BBF-EEEB-4351-ACEA-A9ED6DAF054A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{59C23BBF-EEEB-4351-ACEA-A9ED6DAF054A}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{59C23BBF-EEEB-4351-ACEA-A9ED6DAF054A}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{59C23BBF-EEEB-4351-ACEA-A9ED6DAF054A}.Release|Any CPU.Build.0 = Release|Any CPU
-		{C72EF497-E2D7-4038-BE87-B1D899E4E1E2}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{C72EF497-E2D7-4038-BE87-B1D899E4E1E2}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{C72EF497-E2D7-4038-BE87-B1D899E4E1E2}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{C72EF497-E2D7-4038-BE87-B1D899E4E1E2}.Release|Any CPU.Build.0 = Release|Any CPU
+		{F0B4264C-203B-4904-A721-61694EF37325}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F0B4264C-203B-4904-A721-61694EF37325}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F0B4264C-203B-4904-A721-61694EF37325}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F0B4264C-203B-4904-A721-61694EF37325}.Release|Any CPU.Build.0 = Release|Any CPU
+		{87A76B1B-CE26-40E3-A6F7-B60534B6A1C4}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{87A76B1B-CE26-40E3-A6F7-B60534B6A1C4}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{87A76B1B-CE26-40E3-A6F7-B60534B6A1C4}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{87A76B1B-CE26-40E3-A6F7-B60534B6A1C4}.Release|Any CPU.Build.0 = Release|Any CPU
+		{9EA133DF-B348-43BC-AE08-9D664150F9A8}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{9EA133DF-B348-43BC-AE08-9D664150F9A8}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{9EA133DF-B348-43BC-AE08-9D664150F9A8}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{9EA133DF-B348-43BC-AE08-9D664150F9A8}.Release|Any CPU.Build.0 = Release|Any CPU
+		{91BC3166-6930-495C-8736-C7BD6AAC8E90}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{91BC3166-6930-495C-8736-C7BD6AAC8E90}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{91BC3166-6930-495C-8736-C7BD6AAC8E90}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{91BC3166-6930-495C-8736-C7BD6AAC8E90}.Release|Any CPU.Build.0 = Release|Any CPU
+		{7E5FAB51-28DC-4DE3-8D4E-C95E3EC4D452}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{7E5FAB51-28DC-4DE3-8D4E-C95E3EC4D452}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{7E5FAB51-28DC-4DE3-8D4E-C95E3EC4D452}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{7E5FAB51-28DC-4DE3-8D4E-C95E3EC4D452}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(NestedProjects) = preSolution
-		{084172D1-A9C6-46D0-96AD-05C5B09A5E5D} = {722801D2-73F6-48B7-B1FF-9B47AF45FE93}
-		{05608FE6-4FD1-4E9D-9BE2-B13A0E370BA2} = {722801D2-73F6-48B7-B1FF-9B47AF45FE93}
-		{59C23BBF-EEEB-4351-ACEA-A9ED6DAF054A} = {0A269FC3-9120-49F7-BC5D-0DDEA4394D1D}
-		{01C3DEF5-50B2-47CB-9467-19BC6DDF9D3D} = {2D1EDE70-C329-47EF-A335-9B32CDFCB07C}
-		{C72EF497-E2D7-4038-BE87-B1D899E4E1E2} = {0A269FC3-9120-49F7-BC5D-0DDEA4394D1D}
+		{F0B4264C-203B-4904-A721-61694EF37325} = {2DFF9535-A42C-4081-B01F-292690CB5AA6}
+		{87A76B1B-CE26-40E3-A6F7-B60534B6A1C4} = {2DFF9535-A42C-4081-B01F-292690CB5AA6}
+		{9EA133DF-B348-43BC-AE08-9D664150F9A8} = {4C87EF00-2B0D-4C83-B2B7-3130AA5F4C65}
+		{91BC3166-6930-495C-8736-C7BD6AAC8E90} = {4C87EF00-2B0D-4C83-B2B7-3130AA5F4C65}
 	EndGlobalSection
 EndGlobal

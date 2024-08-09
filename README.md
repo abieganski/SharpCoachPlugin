@@ -60,7 +60,9 @@ gradlew :publishPlugin -PPluginVersion=<version> -PPublishToken=<token>
 - branch `versions\2021.2.2` -> *ProductVersion* = 2021.2.2, *build* = 212.*
 - branch `versions\2023.3-223build` -> *ProductVersion* = 2023.3-SNAPSHOT, *build* = 223.*
 - branch `versions\2023.1` -> *ProductVersion* = 2023.1, *build* = 231.*
-
+- branch `versions\2023.3` -> *ProductVersion* = 2023.3.6, *build* = 233.*
+- branch `versions\2024.1.5` -> *ProductVersion* = 2024.1.5, *build* = 241.*
+- 
 ### Contribution Info
 Feel free to take part in developing the project. 
 You can start with viewing opened [issues](https://github.com/DeagleGross/SharpCoachPlugin/issues).  
