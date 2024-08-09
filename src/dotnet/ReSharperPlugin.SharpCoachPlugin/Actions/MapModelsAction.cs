@@ -25,11 +25,9 @@ namespace ReSharperPlugin.SharpCoachPlugin.Actions;
     ResourceType = typeof(Resources),
     NameResourceName = nameof(Resources.ActionName),
     DescriptionResourceName = nameof(Resources.ActionDescription),
-    Priority = -10)]
+    Priority = 2)]
 public class MapModelsAction : ContextActionBase
 {
-    private readonly LanguageIndependentContextActionDataProvider _dataProvider;
-
     private const string MethodReturnFormat = @"
         {{ 
             return new {0}()
