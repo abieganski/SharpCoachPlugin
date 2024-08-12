@@ -7,7 +7,7 @@ namespace ReSharperPlugin.SharpCoachPlugin.Core.TypeHelpers
 {
     public static class CollectionTypeHelper
     {
-        //[CanBeNull]
+        [CanBeNull]
         public static IType GetUnderlyingType(this IProperty property, CollectionType? propertyCollectionType)
         {
             if (propertyCollectionType is null) return null;

@@ -1,13 +1,10 @@
 # Build artifacts
-/.intellijPlatform/
 [Bb]in/
 [Oo]bj/
 build
-packages
 output
 .gradle
 .tmp
-NuGetLocks/
 
 # User-specific files
 *.suo
@@ -23,3 +20,4 @@ NuGetLocks/
 .vs
 _ReSharper*
 _dotTrace*
+packages/

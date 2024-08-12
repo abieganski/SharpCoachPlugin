@@ -5,29 +5,33 @@
   <vendor url="https://github.com/DeagleGross/SharpCoachPlugin">deaglegross</vendor>
   <depends>com.intellij.modules.rider</depends>
 
+  <!-- idea-version could be controlled from build.gradle using 
+    patchPluginXml {
+      sinceBuild.set('223.0')
+      untilBuild.set('223.*')
+    }
+  -->
   <idea-version since-build="241" until-build="241.*" />
-  
+
   <description>
-    <![CDATA[
+<![CDATA[
 <p>Useful features for C# development:</p>
 <ul> 
   <li>Generates mapping code between classes <i>(create a method with class return type and single argument and check possible actions)</i></li>
 </ul>
 ]]>
   </description>
-
-
+  
   <extensions defaultExtensionNs="com.intellij">
     <!-- options -->
-    <applicationConfigurable id="CoachSharpOptionsPage"
-                             groupId="language"
+    <applicationConfigurable id="CoachSharpOptionsPage" 
+                             groupId="language" 
                              instance="com.jetbrains.rider.plugins.coachsharp.options.CoachSharpOptionsPage"/>
   </extensions>
-
+  
   <actions>
     <action id="MapModelsAction" class="com.jetbrains.rider.plugins.coachsharp.actions.MapModelsAction"
             text="Map models internals" description="Map models internals"/>
   </actions>
-
 
 </idea-plugin>

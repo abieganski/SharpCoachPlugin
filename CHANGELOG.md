@@ -12,6 +12,3 @@ and this project adheres to [Semantic Versioning](http://semver.org/spec/v2.0.0.
 
 ## 1.0.8
 - Extending supported Rider versions  (2022.3)
-
-## 1.4.1
-- Support for Rider 2024.1.5+
